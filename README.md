@@ -47,7 +47,9 @@ Also, you can choose the specific GPU like:
 Python train.py --dataset snippets --gpu 2
 ```
 
-
+## Data Pre-processing
+    
+Please visit https://drive.google.com/file/d/1DAWr8eEpjWluMzoSFhFvsUypKgkrkYto/view?usp=sharing to download the data preprocessing codes and files. 
 
 
 

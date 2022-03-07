@@ -26,23 +26,28 @@ Please cite our paper if you find it helpful. Thanks.
 ```
 
 ## Environment  
+We have implemented the method based on PyTorch and PaddlePaddle respectively, and both versions of the codes are open source.
 
+Please prepare your environment according to the version you want to run.
+### Torch Version:
 - Python 3.7
 - Pytorch 1.2
+
+### Paddle Version:
+- Python 3.7
 - Paddlepaddle 2.2
 
-
 ## Quick Start
-Torch Version:
+If you want to run the Torch Version:
 ```
 cd SHINE-Torch
 ```
-or 
-Paddle Version:
+OR if you want to run the Paddle Version:
 ```
 cd SHINE-Paddle
 ```
-You can quickly check out how SHINE operates on the Twitter dataset by using the command:
+
+Then, You can quickly check out how SHINE operates on the Twitter dataset by using the command:
 ```
 Python train.py
 ```
@@ -58,9 +63,11 @@ Python train.py --dataset snippets --gpu 2
 
 ## Data Pre-processing
     
-Please check the data process folder for more information, you can run the script:
+Please visit https://drive.google.com/file/d/1DAWr8eEpjWluMzoSFhFvsUypKgkrkYto/view?usp=sharing to get the auxiliary data, like the NELL entity embedding and Glove6B word embedding. 
+
+Then, you can check the dataPreProcess folder for more information, and you can run the script:
 ```
-Python DataProcess.py
+Python PreProcess.py
 ```
 If you want to process your own data, you should adapt your data to the format in "snippets_split.json".
 

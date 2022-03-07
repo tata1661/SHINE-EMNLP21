@@ -29,10 +29,19 @@ Please cite our paper if you find it helpful. Thanks.
 
 - Python 3.7
 - Pytorch 1.2
+- Paddlepaddle 2.2
 
 
 ## Quick Start
-
+Torch Version:
+```
+cd SHINE-Torch
+```
+or 
+Paddle Version:
+```
+cd SHINE-Paddle
+```
 You can quickly check out how SHINE operates on the Twitter dataset by using the command:
 ```
 Python train.py
@@ -49,7 +58,10 @@ Python train.py --dataset snippets --gpu 2
 
 ## Data Pre-processing
     
-Please visit https://drive.google.com/file/d/1DAWr8eEpjWluMzoSFhFvsUypKgkrkYto/view?usp=sharing to download the data preprocessing codes and files. 
-
+Please check the data process folder for more information, you can run the script:
+```
+Python DataProcess.py
+```
+If you want to process your own data, you should adapt your data to the format in "snippets_split.json".
 
 

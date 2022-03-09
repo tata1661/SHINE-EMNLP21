@@ -61,13 +61,13 @@ Also, you can choose the specific GPU like:
 Python train.py --dataset snippets --gpu 2
 ```
 
-## Data Pre-processing
+## Pretrained Embedding
     
-Please visit https://drive.google.com/file/d/1DAWr8eEpjWluMzoSFhFvsUypKgkrkYto/view?usp=sharing to get the auxiliary data, like the NELL entity embedding and Glove6B word embedding. 
+Please visit https://drive.google.com/file/d/1gzIsN6XVqEXPJQR8MXVolbmKqlPgU_YA/view?usp=sharing to get the auxiliary pretrained embedding, including the NELL entity embedding and Glove6B word embedding. 
 
-Then, you can check the dataPreProcess folder for more information, and you can run the script:
+Then, you can check the preprocess folder for the code, and you can run the script:
 ```
-Python PreProcess.py
+Python preprocess.py
 ```
 If you want to process your own data, you should adapt your data to the format in "snippets_split.json".
 

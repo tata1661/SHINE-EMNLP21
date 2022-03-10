@@ -26,9 +26,8 @@ Please cite our paper if you find it helpful. Thanks.
 ```
 
 ## Environment  
-We have implemented the method based on PyTorch and PaddlePaddle respectively, and both versions of the codes are open source.
+We provide both the **PyTorch** and **PaddlePaddle** implementations of SHINE in this repository: 
 
-Please prepare your environment according to the version you want to run.
 ### Torch Version:
 - Python 3.7
 - Pytorch 1.2
@@ -38,37 +37,41 @@ Please prepare your environment according to the version you want to run.
 - Paddlepaddle 2.2
 
 ## Quick Start
-If you want to run the Torch Version:
+If you want to run the Torch version:
 ```
 cd SHINE-Torch
 ```
-OR if you want to run the Paddle Version:
+Or if you want to run the PaddlePaddle version:
 ```
 cd SHINE-Paddle
 ```
 
-Then, You can quickly check out how SHINE operates on the Twitter dataset by using the command:
+Then, You can quickly check out how SHINE operates on the Twitter dataset by:
 ```
 Python train.py
 ```
 
-If you want to change the dataset, you can choose the specific dataset like: 
+You can choose a specific dataset by: 
 ```
 Python train.py --dataset snippets
 ```
-Also, you can choose the specific GPU like:
+Likewise, you can choose the specific GPU by:
 ```
 Python train.py --dataset snippets --gpu 2
 ```
 
-## Pretrained Embedding
-    
-Please visit https://drive.google.com/file/d/1gzIsN6XVqEXPJQR8MXVolbmKqlPgU_YA/view?usp=sharing to get the auxiliary pretrained embedding, including the NELL entity embedding and Glove6B word embedding. 
+## Use Your Own Datasets
 
-Then, you can check the preprocess folder for the code, and you can run the script:
+If you want to try SHINE on your own datasets, you need to make your data in the same form of "snippets_split.json".
+
+For the pretrained NELL entity embedding and Glove6B word embedding used in SHINE, you can download them from [here](https://drive.google.com/file/d/1gzIsN6XVqEXPJQR8MXVolbmKqlPgU_YA/view?usp=sharing). 
+Afterwards, you can preprocess the data by:
 ```
 Python preprocess.py
 ```
-If you want to process your own data, you should adapt your data to the format in "snippets_split.json".
+
+
+
+
 
 

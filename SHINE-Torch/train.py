@@ -17,7 +17,7 @@ if __name__ == '__main__':
                             help="save path")
     parser.add_argument('--disable_cuda', action='store_true',
                             help='disable CUDA')
-    parser.add_argument("--seed", type=int, default=120, 
+    parser.add_argument("--seed", type=int, default=119, 
                             help="seeds for random initial")
     parser.add_argument("--hidden_size", type=int, default=200, 
                             help="hidden size")                        
@@ -41,6 +41,9 @@ if __name__ == '__main__':
         params.device = torch.device('cuda:%d' % params.gpu)
     else:
         params.device = torch.device('cpu')
+    if params.dataset == 'snippets':
+        params.lr = 0.003
+        params.weight_decay = 0.0003
     set_seed(params.seed)
     trainer = Trainer(params)
     test_acc,best_f1 = trainer.train()

@@ -163,7 +163,7 @@ def make_node2id_eng_text(dataset_name, remove_StopWord=False):
         ent_list = []
         index = [] 
         for key in ent2id_new.keys():
-            if (' ' + key + ' ') in query.lower() or query.lower()[:len(key)+1] == (key + ' ') or query.lower()[-len(key)-1:] == (' ' + key):
+            if key in query.lower():
                 ent_list.append(key)
                 if key not in ent_mapping:
                     ent_mapping[key] = len(ent_mapping)
@@ -200,7 +200,7 @@ def make_node2id_eng_text(dataset_name, remove_StopWord=False):
         ent_list = []
         index = []
         for key in ent2id_new.keys():
-            if (' ' + key + ' ') in query.lower() or query.lower()[:len(key)+1] == (key + ' ') or query.lower()[-len(key)-1:] == (' ' + key):
+            if key in query.lower():
                 if key not in ent_mapping:
                     ent_list.append(key)
                     ent_mapping[key] = len(ent_mapping)
